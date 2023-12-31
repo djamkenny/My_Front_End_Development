@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.banna {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+/*logo*/
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    color: #c66565;
+    list-style-type: none;
+    display: inline-block;
+    font-size: smaller;
+    margin-right: 12px;
+    cursor: pointer;
+    position: relative;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #9a557f;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.8s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+/* content css */
+
+.content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(121, 101, 94);
+    line-height: 99px;
+}
+
+.content h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4rem;
+}
+
+.content p {
+    line-height: 1.5;
+    color: rgb(80, 91, 104);
+    margin-bottom: 35px;
+}
+
+button {
+    width: 200px;
+    padding: 25px 0px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 1px solid #b7bcbb;
+    background-color: transparent;
+    color: aqua;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    height:100%;
+    width: 0;
+    border-radius: 10px;
+    background: linear-gradient(rgb(82, 41, 41), rgb(160, 63, 63));
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 1.9s;
+}
+
+button:hover span{
+    Width: 100%;
+}
+
+button:hover {
+    border-color: black;
+}
+
+
+
+h3 {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 42px #0fa, 0 0 82px #0fa,0 0 92px #0fa;
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        text-align: center;	  	
+       
+}
