@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #222;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(8,110px);
+    grid-gap: 5px;
+}
+
+.container .card {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    background: rgba(45, 45, 45, 1);
+    overflow: hidden;
+    
+}
+
+.container .card::before {
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    background: radial-gradient(var(--clr), transparent, transparent);
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+    transition: 0.2s, top 0s, left 0s;
+}
+
+.container .card:hover::before {
+    opacity: 1;
+}
+
+.container .card::after {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: rgba(45, 45, 45, 0.6);
+}
+
+@keyframes example {
+   from {background-color: linear-gradient(rgb(89, 140, 5), rgb(105, 199, 4));}
+   to {background-color: rgb(69, 58, 68);}
+}
+
+.container {
+  background-color: transparent;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  
+}
