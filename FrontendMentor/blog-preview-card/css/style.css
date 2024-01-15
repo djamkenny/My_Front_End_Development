@@ -61,6 +61,16 @@ article p {
     
 }
 
+h2:focus {
+    color: hsl(47, 88%, 63%);
+}
+
+h2::after {
+    content: '';
+    color: green;
+    width: 200px;
+}
+
 footer {
     justify-content: flex-start;
 }
@@ -84,15 +94,3 @@ span {
     width: 100%;
    }
 }
-
-media  only screen and (max-width: 277px) {
-    .hero {
-     width: 90%;
-     height: 80vh;
-     font-size: 12px;
-    }
- 
-    header img {
-     width: 100%;
-    }
- }
