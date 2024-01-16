@@ -37,7 +37,7 @@ p, header img {
 
 .Learning {
     background-color: hsl(47, 88%, 63%);
-    border-radius: 0px;
+    border-radius: 5px;
     width: 70px;
     padding: 10px;
     font-size: smaller;
@@ -45,14 +45,14 @@ p, header img {
 }
 
 /* ||Article */
-article h2  {
+article h1  {
     margin-bottom: 20px;
     font-weight: 800;
     cursor: pointer;
 }
 
 /* Hover */
-h2:hover {
+h1:hover {
     color: hsl(47, 88%, 63%);
 }
 
@@ -61,11 +61,11 @@ article p {
     
 }
 
-h2:focus {
+h1:focus {
     color: hsl(47, 88%, 63%);
 }
 
-h2::after {
+h1::after {
     content: '';
     color: green;
     width: 200px;
@@ -86,7 +86,7 @@ span {
 @media  only screen and (max-width: 320px) {
    .hero {
     width: 90%;
-    height: 80vh;
+    height: 55vh;
     font-size: 12px;
    }
 
