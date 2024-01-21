@@ -25,7 +25,7 @@ Step One to becoming a frontend developer, and i will have to gain 150 point to 
 
 ### Links
 
-- Solution URL: [github](https://your-solution-url.com)
+- Solution URL: [github](https://github.com/djamkenny/My_Front_End_Development/tree/main/FrontendMentor/qr-code-component-main)
 
 ## My process
 
